@@ -36,7 +36,7 @@ const SquareAnimation: FC = ({}) => {
 
   return (
     <div
-      className="absolute fullscreen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-20"
+      className="absolute fullscreen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-50"
       ref={squareRef}
     ></div>
   );
@@ -48,8 +48,8 @@ const IntroAnimation: FC<{
   return (
     <>
       <div className="absolute grid grid-cols-2 w-screen h-screen">
-        <div id="grid-left" className="bg-black z-10"></div>
-        <div id="grid-right" className="bg-black z-10"></div>
+        <div id="grid-left" className="bg-black z-40"></div>
+        <div id="grid-right" className="bg-black z-40"></div>
       </div>
       {children}
       <SquareAnimation />
