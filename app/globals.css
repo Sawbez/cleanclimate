@@ -34,13 +34,14 @@ body {
   overflow: hidden;
 }
 
+.fullscreen {
+  width: max(100%, 100vh);
+  height: max(100%, 100vw);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-.square-fit {
-  width: max(100%, 100vh);
-  height: max(100%, 100vw);
-}
