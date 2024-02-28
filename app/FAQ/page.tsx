@@ -32,7 +32,7 @@ export default function Home() {
         </FAQComponent>
 
         <FAQComponent question="What are some sources of green energy?">  
-        <ul className="list-disc">
+        <ul className="list-disc list-inside">
           <li className="list-item">Solar energy</li>
           <li className="list-item">Wind energy</li>
           <li className="list-item">Hydroelectric power</li>
