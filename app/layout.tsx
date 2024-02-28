@@ -1,23 +1,22 @@
-import { cn } from "@/utils/cn";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "CleanClimate",
-  description: "Power the Future",
-};
+  title: 'Clean Climate',
+  description: 'A new, clean, better future.',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+})  {
   return (
     <html lang="en">
-      <body className={cn("themed", inter.className)}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
-  );
+  )
 }

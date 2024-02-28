@@ -1,58 +1,80 @@
-"use client";
-
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import Navbar from "@/components/ui/navbar";
-import IntroAnimation from "@/components/ui/square-intro-anim";
-import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
-  return (
-    <IntroAnimation>
-      <Navbar className="top-2 border-zinc-800 border-2 rounded-full" />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 themed">
-        <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white"
-            >
-              TreeCharity
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-            >
-              They do charity
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-4">
-              <Image
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                height="1000"
-                width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                alt="thumbnail"
-              />
-            </CardItem>
-            <div className="flex justify-between items-center mt-20">
-              <CardItem
-                translateZ={20}
-                as="button"
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-              >
-                Inspect →
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-              >
-                50% tax rebate les gooo
-              </CardItem>
-            </div>
-          </CardBody>
-        </CardContainer>
-      </main>
-    </IntroAnimation>
-  );
+	return (
+		<main className={styles.main}>
+			<span className={styles.description}>
+				<p>
+					Get started with clean energy <a href="/act_now">today</a>
+					.&nbsp;
+				</p>
+			</span>
+
+			<div className={`${styles.center} ${styles.hero}`}>
+				Power the Future.
+			</div>
+
+			<div className={styles.grid}>
+				<a
+					href="/information"
+					className={styles.card}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<h2>
+						Information <span>-&gt;</span>
+					</h2>
+					<p>
+						Learn about who we are, our results, and why this stuff
+						matters.
+					</p>
+				</a>
+
+				<a
+					href="/how_to_help"
+					className={styles.card}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<h2>
+						Opportunities <span>-&gt;</span>
+					</h2>
+					<p>
+						Find opportunities to make your home more green, with
+						tax information.
+					</p>
+				</a>
+
+				<a
+					href="/daily_habits"
+					className={styles.card}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<h2>
+						Daily Habits <span>-&gt;</span>
+					</h2>
+					<p>
+						Explore daily habits you can implement to reduce your
+						carbon footprint.
+					</p>
+				</a>
+
+				<a
+					href="/growth"
+					className={styles.card}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<h2>
+						Donate <span>-&gt;</span>
+					</h2>
+					<p>
+						Find 501(c) charities to elevate your impact on stopping
+						climate change.
+					</p>
+				</a>
+			</div>
+		</main>
+	);
 }
