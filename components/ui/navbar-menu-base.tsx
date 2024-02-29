@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -70,6 +71,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
+
       className="boder shadow-input relative flex items-center justify-center space-x-8 rounded-full border-transparent bg-white px-8 py-2 align-middle dark:border-white/[0.2] dark:bg-black"
     >
       {children}

@@ -42,6 +42,11 @@ body {
 	height: max(100%, 100vw);
 }
 
+.fit {
+  width: min(100%, 100vh);
+  height: min(100%, 100vw);
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
