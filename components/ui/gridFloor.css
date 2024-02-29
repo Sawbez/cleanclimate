@@ -1,0 +1,76 @@
+.floor,
+.floor::after,
+.floor::before,
+.floor-wrap,
+.floor-wrap::after,
+.floor-wrap::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --grid-color: rgba(0, 231, 0, 0.55);
+  --grid-size: 50px;
+}
+
+.floor-wrap {
+  height: 50%;
+  top: 50%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid var(--grid-color);
+  border-bottom: none;
+  transform: perspective(150px) rotateX(45deg);
+}
+
+.floor {
+  background-color: transparent;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--grid-color) 25%,
+      var(--grid-color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--grid-color) 75%,
+      var(--grid-color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--grid-color) 25%,
+      var(--grid-color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--grid-color) 75%,
+      var(--grid-color) 76%,
+      transparent 77%,
+      transparent
+    );
+  height: 200%;
+  width: 100%;
+  background-size: var(--grid-size) var(--grid-size);
+  transform-origin: top center;
+  position: relative;
+  animation: rise 10s infinite linear;
+}
+
+@-webkit-keyframes rise {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -50px;
+  }
+}
+
+@keyframes rise {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: var(--grid-size);
+  }
+}

@@ -1,11 +1,12 @@
 "use client";
+
 import { cn } from "@/utils/cn";
 import { useState } from "react";
 import {
-    HoveredLink,
-    Menu,
-    MenuItem,
-    ProductItem,
+  HoveredLink,
+  Menu,
+  MenuItem,
+  ProductItem,
 } from "../ui/navbar-menu-base";
 
 export default function Navbar({ className }: { className?: string }) {
