@@ -17,9 +17,9 @@
 <circle class="st0" cx="180" cy="180" r="165.35"/>
 <circle class="st1" cx="180" cy="180" r="124.95"/>
 <radialGradient id="SVGID_00000038401405336722490880000015700225825367729547_" cx="149.605" cy="76.6182" r="113.6667" gradientTransform="matrix(0 -1 1 0 103.3818 329.605)" gradientUnits="userSpaceOnUse">
-	<stop  offset="0" style="stop-color:#000069"/>
-	<stop  offset="0.2816" style="stop-color:#000042"/>
-	<stop  offset="0.5887" style="stop-color:#00001E"/>
+	<stop  offset="0" style="stop-color:#00690B"/>
+	<stop  offset="0.2816" style="stop-color:#00420A"/>
+	<stop  offset="0.5887" style="stop-color:#002506"/>
 	<stop  offset="0.8393" style="stop-color:#000008"/>
 	<stop  offset="1" style="stop-color:#000000"/>
 </radialGradient>
