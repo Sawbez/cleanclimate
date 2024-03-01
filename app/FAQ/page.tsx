@@ -126,18 +126,6 @@ export default function Home() {
           </ul>
         </FAQComponent>
 
-        <FAQComponent question="What is this website and who are you?">
-          <p>
-            Welcome to our website, created by five dedicated students from the
-            Technology Student Association (TSA), Tanush Bhatia, Brian Kearl,
-            Lalith Shravan Guruprasad, Sai Chittella, and Logan Dharmawan. TSA
-            is a national student organization formed for early development in
-            STEM and business education. This website is part of a challenge to
-            provide information to homeowners on green and clean energy home
-            solutions and other initiatives.{" "}
-          </p>
-        </FAQComponent>
-
         <FAQComponent question="Why does this website matter??">
           <p>
             This website empowers you, as a homeowner, to act. By visiting this

@@ -13,9 +13,9 @@ const lato = Lato({ weight: "700", subsets: ["latin"] });
 
 export default function Home() {
   useEffect(() => {
-    document.body.classList.add("overflow-hidden");
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.classList.remove("overflow-hidden");
+      document.body.style.overflow = "scroll";
     };
   });
 
@@ -28,7 +28,7 @@ export default function Home() {
           className="fullscreen z-20"
           colors={["#19fba6", "#39f5cf", "#5ff0fd", "#06fe8f", "#29f8ba"]}
         >
-          <GridFloor />
+          <GridFloor className="hidden xl:block" />
           <div className="absolute fit top-[43%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-[#91ffb7] to-transparent to-60% bg-center"></div>
           <SpinningEarth />
           <div

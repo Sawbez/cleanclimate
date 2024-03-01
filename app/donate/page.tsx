@@ -25,7 +25,7 @@ const DonatePage = () => {
             />
             <OrganizationCard
               image="/imgs/greenpeace.png"
-              summary="An international environmental organization that campaigns for solutions to environmental problems. Greenpeace is known for its direct actions and has been involved in several high-profile campaigns"
+              summary="An international organization that campaigns for solutions to environmental problems. It is known for its direct actions and has been involved in several high-profile campaigns"
               name="Greenpeace"
               link="https://www.greenpeace.org/international/"
             />

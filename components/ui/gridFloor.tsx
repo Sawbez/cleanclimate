@@ -1,8 +1,9 @@
-import './gridFloor.css';
+import { cn } from "@/utils/cn";
+import "./gridFloor.css";
 
-const GridFloor = () => {
+const GridFloor = ({ className }: { className: string }) => {
   return (
-    <div className="floor-wrap">
+    <div className={cn("floor-wrap", className)}>
       <div className="floor" />
     </div>
   );
