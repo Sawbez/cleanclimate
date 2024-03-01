@@ -55,7 +55,7 @@ const DonatePage = () => {
             />
             <OrganizationCard
               image="/imgs/climate.png"
-              summary="Provides funding to grassroots organizations working to address the climate crisis. The organization primarly supports marginalized groups."
+              summary="Provides funding to grassroots organizations working to address the climate crisis. The organization primarly supports marginalized groups"
               name="Climate Emergency Fund "
               link="https://www.climateemergencyfund.org/"
             />
