@@ -1,11 +1,10 @@
 // ParentComponent.tsx
-import React, { useEffect, useState } from "react";
 
-const ParentComponent: React.FC = () => {
+const ParentComponent = ({src}: {src: string}) => {
 	return (
 		<div>
 			<div
-				className="relative rounded-full"
+				className="relative left-[20vw] rounded-full"
 				style={{
 					width: "350px",
 					height: "350px",
@@ -14,7 +13,7 @@ const ParentComponent: React.FC = () => {
 				<div className="relative overflow-hidden rounded-full left-10">
 					<img
 						className="h-full w-full object-cover"
-						src="/imgs/personImg.jpeg"
+						src={"/imgs/" + src}
 						alt="Profile"
 						style={{
 							width: "350px",

@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function reasons() {
 	return (
@@ -60,6 +59,7 @@ export default function reasons() {
 					</li>
 				</ul>
 			</div>
+			<br />
 		</span>
 	);
 }
