@@ -1,21 +1,21 @@
 "use client";
-import React, { useEffect } from "react";
 import gsap from "gsap";
+import { useEffect } from "react";
 
-import FAQComponent from "./FAQComponent";
 import Navbar from "@/components/ui/navbar";
+import FAQComponent from "./FAQComponent";
 
 export default function Home() {
   useEffect(() => {
     gsap.fromTo(
       ".side-box",
       { x: -100, opacity: 0.5 },
-      { x: 0, opacity: 1, duration: 1 },
+      { x: 0, opacity: 1, duration: 1 }
     );
     gsap.fromTo(
       ".FAQ",
       { x: 100, opacity: 0.5 },
-      { x: 0, opacity: 1, duration: 1 },
+      { x: 0, opacity: 1, duration: 1 }
     );
   }, []);
 
@@ -24,7 +24,9 @@ export default function Home() {
       <Navbar className="top-2 rounded-full border-2 border-zinc-800" />
 
       <div className="side-box mt-24">
-        <p className="text-8xl font-bold">FAQ</p>
+        <p className="text-xl sm:text-3xl md:text-6xl xl:text-8xl font-bold">
+          FAQ
+        </p>
       </div>
 
       <div className="FAQ ml-10 mt-24 flex-grow">
@@ -59,13 +61,41 @@ export default function Home() {
           <p>
             Carbon dioxide, a greenhouse gas, is mainly released through the
             burning of fossil fuels. This is why using clean energy is important
-            to us – the use of clean energy decreases the need for the use of
+            to us; the use of clean energy decreases the need for the use of
             harmful energy sources and replaces it with environmentally friendly
             sources of energy.{" "}
           </p>
         </FAQComponent>
 
-        <FAQComponent question="How does using green energy stimulate jobs and economic growth? ">
+        <FAQComponent question="Why does green energy matter at all?">
+          <p>
+            Simply stated, green energy is not only vital for our planet but
+            also for our future.
+          </p>
+          <ul className="list-inside list-disc">
+            <li className="list-item">
+              It is a cleaner and more sustainable alternative to traditional
+              fossil fuels.
+            </li>
+            <li className="list-item">
+              It can improve economic growth, support energy independence, and
+              improve overall health and well-being.
+            </li>
+            <li className="list-item">
+              Clean energy technology produces almost no harmful emissions.
+            </li>
+            <li className="list-item">
+              Clean energy is many times the most cost-effective source of
+              energy.
+            </li>
+            <li className="list-item">
+              Providing all people with affordable energy has a very tangible
+              improvement in general quality of life.
+            </li>{" "}
+          </ul>
+        </FAQComponent>
+
+        <FAQComponent question="How does using green energy stimulate jobs and economic growth?">
           <p>
             Green energy is a sustainable and renewable energy source that can
             create jobs and stimulate economic growth. New energy types have
@@ -73,6 +103,48 @@ export default function Home() {
             great for the planet and great for the global economy, as jobs
             created by renewables, energy efficiency, and other investments
             could boost the global economy by nearly{" "}
+          </p>
+        </FAQComponent>
+
+        <FAQComponent question="Why should I act individually?">
+          <p>
+            Even if you do not care about the environment, there are selfish
+            reasons why you might want to go green. With clean energy
+            technologies, you can...
+          </p>
+          <ul className="list-inside list-disc">
+            <li className="list-item">save money on your electricity bills.</li>
+            <li className="list-item">
+              get tax rebates and incentives (more on this later).
+            </li>
+            <li className="list-item">elevate your home value.</li>
+            <li className="list-item">improve your health and safety.</li>
+            <li className="list-item">increase overall comfort</li>
+            <li className="list-item">
+              help the environment be healthy and safe for future generations
+            </li>{" "}
+          </ul>
+        </FAQComponent>
+
+        <FAQComponent question="What is this website and who are you?">
+          <p>
+            Welcome to our website, created by five dedicated students from the
+            Technology Student Association (TSA), Tanush Bhatia, Brian Kearl,
+            Lalith Shravan Guruprasad, Sai Chittella, and Logan Dharmawan. TSA
+            is a national student organization formed for early development in
+            STEM and business education. This website is part of a challenge to
+            provide information to homeowners on green and clean energy home
+            solutions and other initiatives.{" "}
+          </p>
+        </FAQComponent>
+
+        <FAQComponent question="Why does this website matter??">
+          <p>
+            This website empowers you, as a homeowner, to act. By visiting this
+            website and reading the solutions we have provided, you yourself are
+            a part of this very movement. We hope to inspire you to make choices
+            that benefit the environment and society by providing information on
+            green energy solutions.{" "}
           </p>
         </FAQComponent>
       </div>
