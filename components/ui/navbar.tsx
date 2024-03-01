@@ -9,8 +9,8 @@ export default function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed inset-x-0 top-10 z-30 mx-auto", className)}
-      style={{ minWidth: "auto", maxWidth: "fit-content" }}
+      className={cn("fixed inset-x-0 top-10 z-30 m-0 max-w-[100vw] md:mx-auto md:max-w-[45rem]", className)}
+      style={{ minWidth: "auto" }}
     >
       <Menu setActive={setActive}>
         <MenuLink href="/">
@@ -23,7 +23,7 @@ export default function Navbar({ className }: { className?: string }) {
 
         <MenuItem active={active} item="This Site" setActive={setActive}>
           <MenuLink href="/information">About Us & Information</MenuLink>
-          <MenuLink href="/extras" className="mt-2">
+          <MenuLink href="/tsa" className="mt-2">
             Sources, Work Logs, & Copyright
           </MenuLink>
         </MenuItem>

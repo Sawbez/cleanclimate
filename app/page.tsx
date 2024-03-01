@@ -29,7 +29,7 @@ export default function Home() {
           colors={["#19fba6", "#39f5cf", "#5ff0fd", "#06fe8f", "#29f8ba"]}
         >
           <GridFloor className="hidden xl:block" />
-          <div className="absolute fit top-[43%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-[#91ffb7] to-transparent to-60% bg-center"></div>
+          <div className="absolute fit max-width-[100vw] top-[43%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-[#91ffb7] to-transparent to-60% bg-center"></div>
           <SpinningEarth />
           <div
             className={cn(

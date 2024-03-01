@@ -42,8 +42,20 @@ body {
 }
 
 .fit {
-  width: min(100%, 100vh);
-  height: min(100%, 100vw);
+  width: min(100%, 100vw);
+  height: min(100%, 100vh);
+}
+
+@media (max-width: 600px) {
+  .fullscreen {
+    width: max(100%, 100vw);
+    height: max(100%, 100vh);
+  }
+  
+  .fit {
+    width: min(100%, 100vh);
+    height: min(100%, 100vw);
+  }
 }
 
 @layer utilities {

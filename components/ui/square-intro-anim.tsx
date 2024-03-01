@@ -31,7 +31,23 @@ const SquareAnimation: FC = ({}) => {
         "-=30%"
       )
       .to("#grid-left", { duration: 1, x: "-100%", ease: "expo.out" })
-      .to("#grid-right", { duration: 1, x: "100%", ease: "expo.out" }, "<");
+      .to(
+        "#grid-right",
+        {
+          duration: 1,
+          x: "100%",
+          ease: "expo.out",
+          onComplete: () => {
+            const gridLeft = document.getElementById("grid-left");
+            const gridRight = document.getElementById("grid-right");
+            if (gridLeft !== null && gridRight !== null){
+              gridLeft.style.display = "none";
+              gridRight.style.display = "none";
+            }
+          },
+        },
+        "<"
+      );
   }, [squareRef]);
 
   return (
