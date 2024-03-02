@@ -1,5 +1,3 @@
-"use client";
-
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -20,19 +18,15 @@ const SpinningEarth = () => {
     });
   }, [wrapperRef]);
 
-  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
   return (
     <div
       ref={wrapperRef}
-      className="absolute width-[50vw] top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[50vh] flex justify-center align-middle max-w-fit"
+      className="absolute width-[50vw] top-2/3 sm:top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[50vh] flex justify-center align-middle max-w-fit"
     >
-      {!isSafari && (
-        <video autoPlay loop muted>
-          <source src="/earth.webm" type="video/webm" />
-        </video>
-      )}
-      {isSafari && <Image src="/earth.png" alt="earth"></Image>}
+      <Image src="/earth.png" alt="earth" width={1000} height={1000} className="absolute top-5 w-[9rem] sm:w-[25rem] aspect-square max-w-[none] max-h-[none]"></Image>
+      <video autoPlay loop muted className="z-10">
+        <source src="/earth.webm" type="video/webm" />
+      </video>
     </div>
   );
 };
